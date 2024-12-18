@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Resume - Ab Wilson</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7fafc;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-link {
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            background-color: #4fd1c5;
+            color: #1a202c;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+        }
+
+        
+        .resume-item {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .resume-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.6);
+            background-color: #f9f9f9;
+        }
+
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-teal-600 text-white text-center py-6">
+        <h1 class="text-4xl font-bold">Ab Wilson</h1>
+        <p class="text-xl">Software Developer | Innovator | Problem Solver</p>
+    </header>
+
+    
+    <nav class="bg-teal-500 text-white shadow-lg">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-center">
+            <a class="nav-link px-6 py-3" href="#experience">Experience</a>
+            <a class="nav-link px-6 py-3" href="#skills">Skills</a>
+            <a class="nav-link px-6 py-3" href="#education">Education</a>
+            <div class="text-center mt-8 sm:ml-auto">
+                <a href="index.html">
+                    <button class="bg-teal-500 text-white py-2 px-6 rounded-lg hover:bg-teal-400 transition duration-300">
+                        Go Back to About Me
+                    </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto max-w-screen-lg p-6">
+        
+        <div id="experience" class="resume-item fade-in">
+            <h2 class="text-3xl font-semibold mb-4">Work Experience</h2>
+
+            
+            <div class="experience-item mb-8">
+                <p class="font-semibold">Stability Processes Transformation Intern  | Merck</p>
+                <p class="text-gray-600">Aug 2024 - Jan 2024</p>
+                <ul class="list-disc list-inside">
+                    <li>add</li>
+                    <li>add</li>
+                    <li>add</li>
+                </ul>
+            </div>
+
+            
+            <div class="experience-item mb-8">
+                <p class="font-semibold">Fraud Analyst | Barclays Bank USA</p>
+                <p class="text-gray-600">Jul 2022 - Jan 2024</p>
+                <ul class="list-disc list-inside">
+                    <li>add</li>
+                    <li>addr</li>
+                    <li>add</li>
+                </ul>
+            </div>
+
+            
+            <div class="experience-item mb-8">
+                <p class="font-semibold">Sergeant | Delaware Department of Correction</p>
+                <p class="text-gray-600">Jan 2019 - July 2022</p>
+                <ul class="list-disc list-inside">
+                    <li>add</li>
+                    <li>add</li>
+                    <li>add</li>
+                </ul>
+            </div>
+
+            
+            <div class="experience-item mb-8">
+                <p class="font-semibold">Youth Care Coordinator, Upward Bound | DELAWARE TECHNICAL COMMUNITY COLLEGE </p>
+                <p class="text-gray-600">Jan 2017 - Jan 2020</p>
+                <ul class="list-disc list-inside">
+                    <li>add</li>
+                    <li>add</li>
+                    <li>add</li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div id="skills" class="resume-item fade-in mt-8">
+            <h2 class="text-3xl font-semibold mb-4">Skills</h2>
+            <ul class="list-disc list-inside">
+                <li>Operating Systems: Mastery in Microsoft Windows 10, macOS, Linux, Android, iOS</li>
+                <li>Hardware: Expertise in assembly, maintenance, peripherals, printers, drivers, and troubleshooting</li>
+                <li>Software: Proficient in installation, debugging, and well-versed in Microsoft Office, Adobe GoLive, Adobe Photoshop, WordPressL</li>
+                <li>Development Tools & Technologies: Experienced with Jira for project management - </li>
+                <li>JavaScript (React, Node.js)</li>
+                <li>Python (Django, Flask)</li>
+                <li>CSS, HTML</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>Version Control (Git, GitHub)</li>
+            </ul>
+        </div>
+
+        
+        <div id="education" class="resume-item fade-in mt-8">
+            <h2 class="text-3xl font-semibold mb-4">Education</h2>
+            <div>
+                <p class="font-semibold">Christiana High school</p>
+                <p class="text-gray-600">Diploma | 2010 - 2014</p>
+            </div>
+            <div>
+                <p class="font-semibold">Year Up United </p>
+                <p class="text-gray-600">Certification | 2024 - 2025
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-teal-600 text-white text-center py-4">
+        <p>© 2023 Ab Wilson. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+        const sections = document.querySelectorAll('.fade-in');
+        const experiences = document.querySelectorAll('.experience-item');
+
+        function checkVisibility() {
+            
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                    section.classList.add('visible');
+                }
+            });
+
+            
+            experiences.forEach((experience, index) => {
+                const rect = experience.getBoundingClientRect();
+                if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                    experience.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkVisibility);
+        checkVisibility();
+    </script>
+</body>
+</html>
+
